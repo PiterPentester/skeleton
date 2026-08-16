@@ -20,7 +20,7 @@ It embeds all required configurations (uv, ruff, bandit, pytest, Docker, Makefil
 #### **Building from Source**
 
 ```
-git clone https://github.com/  
+git clone https://github.com/PiterPentester/skeleton.git  
 cd skeleton  
 make install
 ```
