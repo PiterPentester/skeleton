@@ -4,6 +4,7 @@ import (
 	"embed"
 	"fmt"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"text/template"
 )
@@ -87,6 +88,15 @@ func main() {
 	testFile := filepath.Join(projectName, "tests", "test_main.py")
 	_ = os.WriteFile(testFile, []byte("def test_placeholder():\n    assert True\n"), 0644)
 	fmt.Printf("  [+] Created tests/test_main.py\n")
+
+	// Initialize Git Repository
+	cmd := exec.Command("git", "init")
+	cmd.Dir = projectName
+	if err := cmd.Run(); err != nil {
+		fmt.Printf("  [!] Failed to initialize git repository: %v\n", err)
+	} else {
+		fmt.Printf("  [+] Initialized empty Git repository\n")
+	}
 
 	fmt.Printf("\nDone! Project '%s' initialized successfully.\n", projectName)
 }
