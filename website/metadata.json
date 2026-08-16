@@ -1,0 +1,6 @@
+{
+  "name": "Skeleton CLI",
+  "description": "Landing page for the skeleton CLI tool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
