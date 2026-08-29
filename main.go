@@ -52,6 +52,7 @@ func main() {
 		"templates/github/workflows/ci.yaml":      ".github/workflows/ci.yaml",
 		"templates/github/workflows/webpage.yaml": ".github/workflows/webpage.yaml",
 		"templates/src/main.py":                   "src/main.py",
+		"templates/.gitignore":                    ".gitignore",
 	}
 
 	for embedPath, targetPath := range fileMap {

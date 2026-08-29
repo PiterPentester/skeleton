@@ -51,7 +51,8 @@ my_python_project/
 │       ├── ci.yaml               # GitHub Actions CI/CD workflow  
 │       └── webpage.yaml          # GitHub Pages deployment workflow  
 ├── .pre-commit-config.yaml       # Pre-commit hook definitions  
-├── Dockerfile                    # Production multi-stage Dockerfile  
+├── Dockerfile                    # Production multi-stage Dockerfile 
+├── .gitignore                    # Git ignore file
 ├── Makefile                      # Standardized project tasks  
 ├── pyproject.toml                # Dependencies, ruff & bandit configuration  
 ├── assets/                       # Static media or data files  
